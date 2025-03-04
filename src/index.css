@@ -10,6 +10,9 @@ html, body {
   padding: 0;
   overflow: hidden;
 }
+body{
+  height: 3000px;
+}
 
 .carousel {
   position: relative;
@@ -40,6 +43,13 @@ html, body {
       }
       .slogan{
         font-size: 1.7rem;
+      }
+    }
+    .bottom-right{
+      top: 80%;
+      left: 80%;
+      .slogan{
+        font-size: 2.5rem;
       }
     }
   }

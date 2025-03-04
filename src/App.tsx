@@ -38,9 +38,8 @@ function App() {
            className="carousel__prev"><i className="fa-solid fa-arrow-left"></i></a>
 
           <div className='showcase'>
-            <div className='text'>
-            <h1 className='title'>OVERLOAD AUTO CLUB™</h1>
-            <div className='slogan'>- In speed we trust, in unity we thrive</div>
+            <div className='text bottom-right'>
+              <div className='slogan'>Made for car enthusiasts by car enthusiasts</div>
             </div>
             <img src={openhoods}></img>
           </div>
