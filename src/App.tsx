@@ -8,6 +8,9 @@ import openhoods from './img/openhoodcarsday.png'
 function App() {
   return (
     <>
+    <header className='header'>
+      <a className='' href='https://discord.gg/gSvQH8xdh2'><i className="fa-brands fa-discord"></i></a>
+    </header>
     <section className="carousel" aria-label="Gallery">
 
   <ol className="carousel__viewport">
@@ -55,9 +58,12 @@ function App() {
            className="carousel__prev"><i className="fa-solid fa-arrow-left"></i></a>
 
         <div className='showcase'>
-          <div className='text'>
-          <h1 className='title'>OVERLOAD AUTO CLUB™</h1>
-          <div className='slogan'>- In speed we trust, in unity we thrive</div>
+          <div className='text bottom-right'>
+          <h1 className='title'>What do we do?</h1>
+          <div className='slogan'>Car meets</div>
+          <div className='slogan'>Drift competitions</div>
+          <div className='slogan'>Races</div>
+          <div className='slogan'>Car showcases</div>
           </div>
           <img src={skyline}></img>
         </div>
@@ -74,8 +80,8 @@ function App() {
 
         <div className='showcase'>
           <div className='text'>
-          <h1 className='title'>OVERLOAD AUTO CLUB™</h1>
-          <div className='slogan'>- In speed we trust, in unity we thrive</div>
+          <h1 className='title'> Join OVERLOAD AUTO CLUB™ today</h1>
+          <a className='' href='https://discord.gg/gSvQH8xdh2'><i className="fa-brands fa-discord"></i></a>
           </div>
           <img src={skylines}></img>
         </div>
