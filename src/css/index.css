@@ -1,0 +1,11 @@
+.showcase {
+  background: red;
+  margin: 1rem;
+}
+.showcase .hej {
+  margin: 1rem;
+  background: red;
+}
+.showcase img {
+  margin: 1rem;
+}

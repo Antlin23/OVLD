@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "GilroyRegular";
+  src: local("GilroyRegular"),
+    url("./fonts/the-stoothgart-regular.ttf") format("opentype");
+  font-weight: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+
+  .showcase {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .text{
+      font-family: "GilroyRegular";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      .title{
+        font-size: 4rem;
+      }
+      .slogan{
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: auto; /* Fixes navigation issues */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  margin: 0;
+  padding: 0;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.carousel__slide img {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  object-fit: cover;
+}
+
+/* Fix navigation buttons */
+.carousel__prev, .carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel__prev {
+  left: 10px;
+}
+.carousel__next {
+  right: 10px;
+}
+
+.carousel__viewport {
+  overflow-x: scroll; /* Allow scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
+.carousel__viewport::-webkit-scrollbar {
+  display: none;
 }
