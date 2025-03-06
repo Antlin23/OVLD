@@ -1,9 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import skylines from './img/skylinesnologo.jpg'
-import carsfrombeh from './img/highrescarsbeh.jpg'
-import skyline from './img/skyline.jpg'
-import openhoods from './img/ovldcarsdailight.jpg'
+import Showcase from './Showcase';
+import jdmcars from './img/jdmcarsovld.jpg'
+import jdmcarsgray from './img/jdmcarfocusingray.jpg'
 
 function App() {
   return (
@@ -11,86 +10,33 @@ function App() {
     <header className='header'>
       <a className='' href='https://discord.gg/gSvQH8xdh2'><i className="fa-brands fa-discord"></i></a>
     </header>
-    <section className="carousel" aria-label="Gallery">
 
-  <ol className="carousel__viewport">
+    <Showcase />
 
-    <li id="carousel__slide1"
-        className="carousel__slide">
-      <div className="carousel__snapper">
-        <a href="#carousel__slide4"
-           className="carousel__prev"><i className="fa-solid fa-arrow-left"></i></a>
-           
-           <div className='showcase'>
-            <div className='text'>
-            <h1 className='title'>OVERLOAD AUTO CLUB™</h1>
-            <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
-            </div>
-            <img src={carsfrombeh}></img>
-          </div>
-
-        <a href="#carousel__slide2"
-           className="carousel__next"><i className="fa-solid fa-arrow-right"></i></a>
+    <section className='contents container'>
+      <div className='content'>
+        <img src={jdmcars}></img>
+        <div className='text'>
+          <h2>
+            Who we are
+          </h2>
+          <p>Founded in early 2025 by Antlin, with a vision to create a community where car enthusiasts can come together.</p>
+          <p>At the moment, we are four enthusiastic individuals working to make the club a welcoming environment for everyone.</p>
+        </div>
       </div>
-    </li>
-
-    <li id="carousel__slide2"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-           className="carousel__prev"><i className="fa-solid fa-arrow-left"></i></a>
-
-          <div className='showcase'>
-            <div className='text bottom-right'>
-              <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
-            </div>
-            <img src={openhoods}></img>
-          </div>
-
-      <a href="#carousel__slide3"
-           className="carousel__next"><i className="fa-solid fa-arrow-right"></i></a>
-    </li>
-
-    <li id="carousel__slide3"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-           className="carousel__prev"><i className="fa-solid fa-arrow-left"></i></a>
-
-        <div className='showcase'>
-          <div className='text bottom-right'>
-          <h1 className='title'>What we do</h1>
-          <div className='slogan'>Car meets</div>
-          <div className='slogan'>Drift competitions</div>
-          <div className='slogan'>Races</div>
-          <div className='slogan'>Car showcases</div>
-          </div>
-          <img src={skyline}></img>
+      <div className='content container'>
+        <div className='text'>
+          <h2>
+            What we do
+          </h2>
+          <p>Car meets, drift competitions, races, cruises, and photo competitions are some of the car-related events regularly hosted.</p>
+          <p>Whether you're a true car enthusiast who can name every JDM car ever built, or you just want to showcase your car at meets, there is a place for you in OVLD.</p>
         </div>
+        <img src={jdmcarsgray}></img>
+      </div>
+    </section>
 
-      <a href="#carousel__slide4"
-           className="carousel__next"><i className="fa-solid fa-arrow-right"></i></a>
-    </li>
 
-    <li id="carousel__slide4"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <a href="#carousel__slide3"
-           className="carousel__prev"><i className="fa-solid fa-arrow-left"></i></a>
-
-        <div className='showcase'>
-          <div className='text'>
-          <h1 className='title'> Join OVERLOAD AUTO CLUB™ today</h1>
-          <a className='' href='https://discord.gg/gSvQH8xdh2'><i className="fa-brands fa-discord"></i></a>
-          </div>
-          <img src={skylines}></img>
-        </div>
-
-      <a href="#carousel__slide1"
-           className="carousel__next"><i className="fa-solid fa-arrow-right"></i></a>
-    </li>
-  </ol>
-</section>
     </>
   );
 }
