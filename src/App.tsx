@@ -21,7 +21,7 @@ function App() {
             Who we are
           </h2>
           <p>Founded in early 2025 by Antlin, with a vision to create a community where car enthusiasts can come together.</p>
-          <p>At the moment, we are four enthusiastic individuals working to make the club a welcoming environment for everyone.</p>
+          <p>At the moment, we are four enthusiastic individuals working to make the club a welcoming environment for everyone, alongside with all our members.</p>
         </div>
       </div>
       <div className='content container'>
