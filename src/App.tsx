@@ -42,7 +42,7 @@ function App() {
 
           <div className='showcase'>
             <div className='text bottom-right'>
-              <div className='slogan'>Made for car enthusiasts by car enthusiasts</div>
+              <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
             </div>
             <img src={openhoods}></img>
           </div>
