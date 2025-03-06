@@ -1,5 +1,5 @@
 import React from 'react';
-import skylines from './img/skylinesnologo.jpg'
+import jdmcarsgrafoc from './img/jdmcarfocusingray.jpg'
 import carsfrombeh from './img/highrescarsbeh.jpg'
 import skyline from './img/skyline.jpg'
 import openhoods from './img/ovldcarsdailight.jpg'
@@ -38,7 +38,7 @@ function Showcase() {
             <div className='text bottom-right'>
               <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
             </div>
-            <img src={openhoods}></img>
+            <img src={jdmcarsgrafoc}></img>
           </div>
 
       <a href="#carousel__slide3"
@@ -77,7 +77,7 @@ function Showcase() {
           <h1 className='title'> Join OVERLOAD AUTO CLUB™ today</h1>
           <a className='' href='https://discord.gg/gSvQH8xdh2'><i className="fa-brands fa-discord"></i></a>
           </div>
-          <img src={skylines}></img>
+          <img src={openhoods}></img>
         </div>
 
       <a href="#carousel__slide1"

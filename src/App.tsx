@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import Showcase from './Showcase';
 import jdmcars from './img/jdmcarsovld.jpg'
-import jdmcarsgray from './img/jdmcarfocusingray.jpg'
+import skylines from './img/skylinesnologo.jpg'
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
           <p>Car meets, drift competitions, races, cruises, and photo competitions are some of the car-related events regularly hosted.</p>
           <p>Whether you're a true car enthusiast who can name every JDM car ever built, or you just want to showcase your car at meets, there is a place for you in OVLD.</p>
         </div>
-        <img src={jdmcarsgray}></img>
+        <img src={skylines}></img>
       </div>
     </section>
 
