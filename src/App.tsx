@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import skylines from './img/skylinesovld.png'
-import carsfrombeh from './img/highrescarsbeh.png'
-import skyline from './img/skyline.png'
-import openhoods from './img/openhoodcarsday.png'
+import skylines from './img/skylinesnologo.jpg'
+import carsfrombeh from './img/highrescarsbeh.jpg'
+import skyline from './img/skyline.jpg'
+import openhoods from './img/ovldcarsdailight.jpg'
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
            <div className='showcase'>
             <div className='text'>
             <h1 className='title'>OVERLOAD AUTO CLUB™</h1>
-            <div className='slogan'>- In speed we trust, in unity we thrive</div>
+            <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
             </div>
             <img src={carsfrombeh}></img>
           </div>
@@ -59,7 +59,7 @@ function App() {
 
         <div className='showcase'>
           <div className='text bottom-right'>
-          <h1 className='title'>What do we do?</h1>
+          <h1 className='title'>What we do</h1>
           <div className='slogan'>Car meets</div>
           <div className='slogan'>Drift competitions</div>
           <div className='slogan'>Races</div>
