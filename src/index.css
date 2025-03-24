@@ -14,7 +14,6 @@ html, body {
 body{
   font-family: "GilroyRegular";
   background-image: linear-gradient(to right, #000000, #170029);
-  padding-bottom: 6rem;
 }
 
 .header{
@@ -65,9 +64,18 @@ body{
     }
   }
 }
+/*Footer---------------*/
+.footer{
+  margin-top: 6rem;
+  background-color: rgba(0, 0, 0, 0.516);
+  padding: 1.5rem;
+  color: rgb(147, 147, 147);
+  .footer--content{
+  }
+}
 
 
-
+/*Showcase-------------*/
 .carousel {
   position: relative;
   width: 100vw;
