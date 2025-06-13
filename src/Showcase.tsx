@@ -20,7 +20,7 @@ function Showcase() {
             <h1 className='title'>OVERLOAD AUTO CLUB™</h1>
             <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
             </div>
-            <img src={carsfrombeh}></img>
+            <img src={jdmcarsgrafoc}></img>
           </div>
 
         <a href="#carousel__slide2"
@@ -38,7 +38,7 @@ function Showcase() {
             <div className='text bottom-right'>
               <div className='slogan'>Made by car enthusiasts, for car enthusiasts</div>
             </div>
-            <img src={jdmcarsgrafoc}></img>
+            <img src={carsfrombeh}></img>
           </div>
 
       <a href="#carousel__slide3"
