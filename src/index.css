@@ -46,7 +46,8 @@ body{
 
 .content {
   margin-top: 9rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: 6rem;
@@ -59,6 +60,8 @@ body{
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  order: 1;
 }
 
 .content--image img {
@@ -89,6 +92,8 @@ body{
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  order: 2;
 }
 
 .text--content {
@@ -183,12 +188,20 @@ body{
 
 @media (min-width: 1200px) {
   .content {
-    display: flex;
+    flex-direction: row;
     padding: 0 2rem;
   }
 
   .content:nth-child(even) {
     flex-direction: row-reverse;
+  }
+
+  .content:nth-child(even) .content--image {
+    order: 2;
+  }
+
+  .content:nth-child(even) .text {
+    order: 1;
   }
 
   .content--image {
@@ -257,103 +270,71 @@ body{
   height: 100vh;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
-
-  .showcase {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .text{
-      font-family: "GilroyRegular";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      .title{
-        font-size: 4rem;
-      }
-      .slogan{
-        font-size: 1.7rem;
-      }
-    }
-    .bottom-right{
-      .slogan{
-        font-size: 2.5rem;
-      }
-    }
-    a{
-      color: white;
-      font-size: 2rem;
-    }
-  }
 }
 
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: auto; /* Fixes navigation issues */
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-  margin: 0;
-  padding: 0;
-}
-
-.carousel__slide {
+.showcase {
   position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  scroll-snap-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.carousel__slide img {
+.showcase img {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100%;
   object-fit: cover;
 }
 
-/* Fix navigation buttons */
-.carousel__prev, .carousel__next {
+.showcase .text {
+  font-family: "GilroyRegular";
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 20px;
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.showcase .text .title {
+  font-size: 4rem;
   text-align: center;
-  line-height: 50px;
-  cursor: pointer;
-  z-index: 10;
+  margin-bottom: 1rem;
+  -webkit-text-fill-color: white;
+  background: none;
 }
 
-.carousel__prev {
-  left: 10px;
-}
-.carousel__next {
-  right: 10px;
-}
-
-.carousel__viewport {
-  overflow-x: scroll; /* Allow scrolling */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
-  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+.showcase .text .slogan {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #ccc;
 }
 
-/* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
-.carousel__viewport::-webkit-scrollbar {
-  display: none;
+.showcase .bottom-right {
+  top: auto;
+  left: auto;
+  right: 2rem;
+  bottom: 2rem;
+  transform: none;
+}
+
+.showcase .bottom-right .slogan {
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.showcase a {
+  color: white;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.showcase a:hover {
+  color: #5865F2;
+  transform: scale(1.1);
 }
 
 /* Events Section */
@@ -433,4 +414,66 @@ body{
   color: white;
   box-shadow: 0 5px 20px rgba(88, 101, 242, 0.5);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Carousel Navigation */
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.carousel__prev, .carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.carousel__prev:hover, .carousel__next:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: #5865F2;
+}
+
+.carousel__prev {
+  left: 10px;
+}
+
+.carousel__next {
+  right: 10px;
+}
+
+.carousel__viewport {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+  display: none;
 }
