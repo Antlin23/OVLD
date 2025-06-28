@@ -1,13 +1,13 @@
 import React from 'react';
 import jdmcars from './img/jdmcarsovld.jpg'
-import skylines from './img/skylinesnologo.jpg'
+import skylines from './img/sandyshoredsairfield.jpg'
 
 function Showcase() {
   return (
     <section className='contents container'>
       <div id="about" className='content'>
         <div className='content--image'>
-          <img src={jdmcars} alt="OVLD Car Meet" />
+          <img src={skylines} alt="OVLD Car Meet" />
           <div className='image--overlay'></div>
         </div>
         <div className='text'>
@@ -58,7 +58,7 @@ function Showcase() {
           </div>
         </div>
         <div className='content--image'>
-          <img src={skylines} alt="OVLD Skylines" />
+          <img src={jdmcars} alt="OVLD Skylines" />
           <div className='image--overlay'></div>
         </div>
       </div>
