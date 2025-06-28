@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Showcase from './Showcase';
 import ImgAndInfo from "./ImgAndInfo";
 import Events from "./Events";
+import Staff from "./Staff";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Showcase />
     <ImgAndInfo />
     <Events />
+    <Staff />
 
     <footer className='footer'>
       <div className='footer--content container'>
