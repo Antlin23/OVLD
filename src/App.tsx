@@ -4,6 +4,7 @@ import Showcase from './Showcase';
 import ImgAndInfo from "./ImgAndInfo";
 import Events from "./Events";
 import Staff from "./Staff";
+import StaffCarousel from "./StaffCarousel";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Showcase />
     <ImgAndInfo />
     <Events />
+    <StaffCarousel />
     <Staff />
 
     <footer className='footer'>
@@ -30,16 +32,13 @@ function App() {
             <a href='#about'>Who We Are</a>
           </div>
           <div className='footer--section'>
-            <h3>Server Features</h3>
-            <p>• Weekly Car Meets</p>
-            <p>• Drift Competitions</p>
-            <p>• Racing Events</p>
-            <p>• Photo Contests</p>
-          </div>
-          <div className='footer--section'>
             <h3>Contact</h3>
-            <p>Discord: OVLD Auto Club</p>
-            <p>Server Owner: Anton</p>
+            <a href='https://discord.gg/gSvQH8xdh2' target='_blank' rel='noopener noreferrer'>
+              <i className="fa-brands fa-discord"></i> Join our Discord
+            </a>
+            <a href='https://www.instagram.com/ovldautoclub' target='_blank' rel='noopener noreferrer'>
+              <i className="fa-brands fa-instagram"></i> Follow us on Instagram
+            </a>
           </div>
         </div>
         <div className='footer--bottom'>
