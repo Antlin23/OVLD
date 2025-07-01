@@ -407,6 +407,7 @@ body{
 }
 
 .event-card p {
+  font-family: 'Courier New', Courier, monospace;
   color: #ccc;
   margin-bottom: 1.5rem;
   line-height: 1.6;

@@ -5,30 +5,6 @@ import skylines from './img/sandyshoredsairfield.jpg'
 function Showcase() {
   return (
     <section className='contents container'>
-      <div id="about" className='content'>
-        <div className='content--image'>
-          <img src={skylines} alt="OVLD Car Meet" />
-          <div className='image--overlay'></div>
-        </div>
-        <div className='text'>
-          <div className='text--content'>
-            <h2>Who We Are</h2>
-            <div className='text--divider'></div>
-            <p>Founded in early 2025 by Anton, with a vision to create a community where car enthusiasts can come together.</p>
-            <p>At the moment, we are five enthusiastic individuals working to make the club a welcoming environment for everyone, alongside with all our members.</p>
-            <div className='text--stats'>
-              <div className='stat'>
-                <span className='stat--number'>5</span>
-                <span className='stat--label'>Staff Members</span>
-              </div>
-              <div className='stat'>
-                <span className='stat--number'>100+</span>
-                <span className='stat--label'>Active Members</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className='content container'>
         <div className='text'>
@@ -62,6 +38,32 @@ function Showcase() {
           <div className='image--overlay'></div>
         </div>
       </div>
+
+      <div id="about" className='content'>
+        <div className='content--image'>
+          <img src={skylines} alt="OVLD Car Meet" />
+          <div className='image--overlay'></div>
+        </div>
+        <div className='text'>
+          <div className='text--content'>
+            <h2>Who We Are</h2>
+            <div className='text--divider'></div>
+            <p>Founded in early 2025 by Anton, with a vision to create a community where car enthusiasts can come together.</p>
+            <p>At the moment, we are five enthusiastic individuals working to make the club a welcoming environment for everyone, alongside with all our members.</p>
+            <div className='text--stats'>
+              <div className='stat'>
+                <span className='stat--number'>5</span>
+                <span className='stat--label'>Staff Members</span>
+              </div>
+              <div className='stat'>
+                <span className='stat--number'>100+</span>
+                <span className='stat--label'>Active Members</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 }
