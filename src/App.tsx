@@ -5,6 +5,8 @@ import ImgAndInfo from "./ImgAndInfo";
 import Events from "./Events";
 import Staff from "./Staff";
 import StaffCarousel from "./StaffCarousel";
+import Partners from "./Partners";
+import ClosureAnnouncement from "./ClosureAnnouncement";
 
 function App() {
   return (
@@ -17,10 +19,12 @@ function App() {
     </header>
 
     <Showcase />
+    <ClosureAnnouncement />
+    <StaffCarousel />
     <ImgAndInfo />
     <Events />
-    <StaffCarousel />
     <Staff />
+    <Partners />
 
     <footer className='footer'>
       <div className='footer--content container'>

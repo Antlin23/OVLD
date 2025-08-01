@@ -9,7 +9,12 @@ function Staff() {
     },
     {
       name: "Rndom",
-      role: "Co-owner",
+      role: "Meet Host",
+      icon: "fa-solid fa-crown"
+    },
+    {
+      name: "Keyz",
+      role: "Meet Host",
       icon: "fa-solid fa-crown"
     },
     {
@@ -48,8 +53,6 @@ function Staff() {
             <h3>{staffMembers[1].name}</h3>
             <div className="staff--role">{staffMembers[1].role}</div>
           </div>
-        </div>
-        <div className="staff--bottom-row">
           <div className="staff-card">
             <div className="staff--icon">
               <i className={staffMembers[2].icon}></i>
@@ -57,6 +60,8 @@ function Staff() {
             <h3>{staffMembers[2].name}</h3>
             <div className="staff--role">{staffMembers[2].role}</div>
           </div>
+        </div>
+        <div className="staff--bottom-row">
           <div className="staff-card">
             <div className="staff--icon">
               <i className={staffMembers[3].icon}></i>
@@ -70,6 +75,13 @@ function Staff() {
             </div>
             <h3>{staffMembers[4].name}</h3>
             <div className="staff--role">{staffMembers[4].role}</div>
+          </div>
+          <div className="staff-card">
+            <div className="staff--icon">
+              <i className={staffMembers[5].icon}></i>
+            </div>
+            <h3>{staffMembers[5].name}</h3>
+            <div className="staff--role">{staffMembers[5].role}</div>
           </div>
         </div>
       </div>

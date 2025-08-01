@@ -4,7 +4,7 @@ import skylines from './img/sandyshoredsairfield.jpg'
 
 function Showcase() {
   return (
-    <section className='contents container'>
+    <section className='contents container mt-1'>
 
       <div className='content container'>
         <div className='text'>
@@ -49,10 +49,10 @@ function Showcase() {
             <h2>Who We Are</h2>
             <div className='text--divider'></div>
             <p>Founded in early 2025 by Anton, with a vision to create a community where car enthusiasts can come together.</p>
-            <p>At the moment, we are five enthusiastic individuals working to make the club a welcoming environment for everyone, alongside with all our members.</p>
+            <p>At the moment, we are six enthusiastic individuals working to make the club a welcoming environment for everyone, alongside with all our members.</p>
             <div className='text--stats'>
               <div className='stat'>
-                <span className='stat--number'>5</span>
+                <span className='stat--number'>6</span>
                 <span className='stat--label'>Staff Members</span>
               </div>
               <div className='stat'>
